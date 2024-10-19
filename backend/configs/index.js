@@ -1,0 +1,18 @@
+require("dotenv").config();
+module.exports = {
+  APP_PORT,
+  DEBUG_MODE,
+  DB_URL,
+  JWT_SECRET,
+  REFRESH_SECRET,
+  APP_URL,
+  SMTP_HOST,
+  SMTP_PORT,
+  SMTP_USER,
+  SMTP_PASS,
+  HASH_SECRET,
+  AWS_ACCESS_KEY_ID,
+  AWS_SECRET_ACCESS_KEY,
+  AWS_REGION,
+  AWS_S3_BUCKET_NAME,
+} = process.env;

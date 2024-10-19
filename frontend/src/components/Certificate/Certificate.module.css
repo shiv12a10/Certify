@@ -1,0 +1,80 @@
+.certificateContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inputWrapper {
+  flex: 1;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.generateButton {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.generateButton:hover {
+  background-color: #0056b3;
+}
+
+.certificatePreview {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.certificateImage {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.recipientName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap;
+}

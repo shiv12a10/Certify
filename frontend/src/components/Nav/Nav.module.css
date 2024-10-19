@@ -1,0 +1,133 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e293b; /* Dark blue-gray */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logoLink {
+  color: #ffffff; /* White */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.logoLink:hover {
+  color: #4caf50; /* Soft green */
+}
+
+/* Navbar List */
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px; /* Space between items */
+}
+
+/* Navbar Item */
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: #ffffff; /* White */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #4caf50; /* Soft green */
+  border-bottom: 3px solid #4caf50; /* Bottom border on hover */
+}
+
+/* Admin Section */
+.adminSection {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between name and button */
+  color: #ffffff;
+}
+
+/* Admin Name Styling */
+.adminName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff; /* White */
+}
+
+/* Logout Button */
+.logoutButton {
+  background-color: #ff4b5c; /* Red */
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.logoutButton:hover {
+  background-color: #e03949; /* Darker red */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Login Button (for non-authenticated users) */
+.loginLink {
+  background-color: #4caf50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.loginLink:hover {
+  background-color: #3e8e41; /* Darker green */
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .adminSection {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .logoutButton, .loginLink {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

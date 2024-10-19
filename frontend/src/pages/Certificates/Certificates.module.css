@@ -1,0 +1,149 @@
+.certificatesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificatesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.certificatesTable th,
+.certificatesTable td {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.certificatesTable th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.certificatesTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.certificatesTable tr:hover {
+  background-color: #e9ecef;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.statusText {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.validStatus {
+  color: #28a745; /* Green color for valid */
+  /* background-color: #d4edda; Light green background */
+}
+
+.invalidStatus {
+  color: #dc3545; /* Red color for invalid */
+  /* background-color: #f8d7da; Light red background */
+}
+
+.actionButton {
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.validateButton {
+  background-color: #28a745; /* Green for validate */
+}
+
+.validateButton:hover {
+  background-color: #218838;
+}
+
+.invalidateButton {
+  background-color: #ffc107; /* Yellow for invalidate */
+}
+
+.invalidateButton:hover {
+  background-color: #e0a800;
+}
+
+.editButton {
+  background-color: #17a2b8; /* Teal for edit */
+}
+
+.editButton:hover {
+  background-color: #138496;
+}
+.pagination {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pageButton {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #495057;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pageButton:hover {
+  background-color: #ced4da;
+  transform: scale(1.05);
+}
+
+.activePage {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  transform: scale(1.1);
+}

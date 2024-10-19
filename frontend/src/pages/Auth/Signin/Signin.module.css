@@ -1,0 +1,120 @@
+/* Signup Container */
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  /* background: linear-gradient(135deg, #4a90e2, #9013fe); */
+  padding: 20px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Form Styling */
+.form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Group */
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Label Styling */
+.label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus */
+.input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover Effect for Button */
+.submitButton:hover {
+  background-color: #3a7bc1;
+}
+
+/* Sign In Prompt */
+.signInPrompt {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.signInLink {
+  color: #6ca7ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signInLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signupContainer {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .form {
+    padding: 30px;
+  }
+
+  .submitButton {
+    padding: 12px;
+  }
+}
